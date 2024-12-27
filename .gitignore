@@ -1,0 +1,9 @@
+Whisper.dll
+ggml-*
+*.exe
+
+whisper-api-server.exe
+
+tmp/*
+!tmp/.gitkeep
+dist/

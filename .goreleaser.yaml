@@ -1,0 +1,18 @@
+builds:
+  - binary: whisper-api-server
+    goos:
+      - windows
+    goarch:
+      - amd64
+    env:
+      - CGO_ENABLED=1
+      - CC=x86_64-w64-mingw32-gcc
+      - CXX=x86_64-w64-mingw32-g++
+release:
+  prerelease: auto
+
+archives:
+  - format: binary
+
+checksum:
+  name_template: "checksum.txt"
