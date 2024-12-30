@@ -66,6 +66,6 @@ func main() {
 		return api.TranscribeFromFile(c, whisperState)
 	})
 
-	address := fmt.Sprintf("127.0.0.1:%d", args.Port)
+	address := fmt.Sprintf("0.0.0.0:%d", args.Port)
 	e.Logger.Fatal(e.Start(address))
 }
